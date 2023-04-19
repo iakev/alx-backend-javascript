@@ -4,7 +4,7 @@ export default function handleProfileSignup() {
   const promise1 = uploadPhoto();
   const promise2 = createUser();
 
-  promise1
+  return promise1
     .then((res) => res.body)
     .then((body) => promise2
       .then((user) => {
