@@ -15,7 +15,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
     .then((arr) => uploadPhoto(fileName)
       .catch((err) => {
         const photoObject = {
-          status: 'resolved',
+          status: 'rejected',
           value: err,
         };
         arr.push(photoObject);
