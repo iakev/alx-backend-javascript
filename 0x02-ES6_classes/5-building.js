@@ -1,7 +1,7 @@
 export default class Building {
   constructor(sqft) {
     if (this.constructor !== Building) {
-      if (!(this.evacuationWarningMessage in this)) {
+      if (!('evacuationWarningMessage' in this)) {
         throw new Error('Class extending Building must override evacuationWarningMessage');
       }
     }
