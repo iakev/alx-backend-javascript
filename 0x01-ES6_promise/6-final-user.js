@@ -6,7 +6,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
   return signUpUser(firstName, lastName).then((user) => user)
     .then((user) => {
       const userObject = {
-        status: 'resolved',
+        status: 'fulfilled',
         value: user,
       };
       arr.push(userObject);
@@ -16,7 +16,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       .catch((err) => {
         const photoObject = {
           status: 'rejected',
-          value: err,
+          value: `${err.name}: ${err.message}`,
         };
         arr.push(photoObject);
         return arr;
