@@ -6,6 +6,6 @@ export default class Car {
   }
 
   cloneCar() {
-    return Object.assign({}, this)
+    return { ...this };
   }
 }
