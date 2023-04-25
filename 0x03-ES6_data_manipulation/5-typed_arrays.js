@@ -8,5 +8,5 @@ export default function createInt8TypedArray(length, position, value) {
   } catch (error) {
     throw new RangeError('Position outside range');
   }
-  return buffer;
+  return int8View;
 }
