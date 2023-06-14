@@ -39,7 +39,7 @@ function countStudents(path) {
         // console.log(`Number of students: ${studentsCnt}`);
         for (const [key, value] of Object.entries(firstNames)) {
           // console.log(`Number of students in ${key} ${value.length}. List: ${value.join(', ')}`);
-          output.push(`Number of students in ${key} ${value.length}. List: ${value.join(', ')}`);
+          output.push(`Number of students in ${key}: ${value.length}. List: ${value.join(', ')}`);
         }
         resolve(output);
       }
@@ -68,6 +68,4 @@ app.get('/students', (req, res) => {
     });
 });
 app.listen(port);
-module.exports = {
-  app,
-};
+module.exports = app;
