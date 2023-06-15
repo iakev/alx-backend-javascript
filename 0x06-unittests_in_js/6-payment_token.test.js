@@ -6,7 +6,7 @@ describe('getPaymentTokenFromAPI', function() {
     getPaymentTokenFromAPI(true)
       .then(function(result) {
         chai.expect(result.data).to.equal('Successful response from the API');
+        done();
       });
-    done();
   });
 });
