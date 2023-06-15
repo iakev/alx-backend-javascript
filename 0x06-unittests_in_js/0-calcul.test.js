@@ -17,10 +17,10 @@ describe('calculateNumber', function() {
   it('should round negative arguments and return the sum of them', function () {
     assert.equal(calculateNumber(-2.5, 5.6), 4);
   });
-  it('should round zero-valued arguments and return the sum of them', function () {
-    assert.equal(calculateNumber(-0.5, 5.6), 6);
+  it('should round zero-valued negative arguments and return the sum of them', function () {
+    assert.equal(calculateNumber(-0.5, -5.6), -6);
   });
   it('should round zero arguments and return the sum of them', function () {
-    assert.equal(calculateNumber(0, 1), 1);
+    assert.equal(calculateNumber(0, 0), 0);
   });
 });
