@@ -9,7 +9,7 @@ describe('sendPaymentRequestToApi', function (){
   beforeEach(function() {
     calculateNumber = sinon.stub(Utils, 'calculateNumber').returns(10);
     print = sinon.spy(console, 'log');
-  });
+  })
   this.afterEach(function() {
     calculateNumber.restore();
     print.restore();
