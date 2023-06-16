@@ -3,7 +3,7 @@ const chai = require('chai');
 const expect = chai.expect;
 
 describe('calculateNumber', function() {
-  describe('#SUM', function() {
+  describe('SUM', function() {
     it('should round arguments and return the sum of them', function () {
       expect(calculateNumber('SUM', 1, 3)).to.equal(4);
     });
@@ -26,7 +26,7 @@ describe('calculateNumber', function() {
       expect(calculateNumber('SUM', 0, 0)).to.equal(0);
     });
   });
-  describe('#SUBTRACT', function() {
+  describe('SUBTRACT', function() {
     it('should round arguments and return the difference', function () {
       expect(calculateNumber('SUBTRACT', 14, 3)).to.equal(11);
     });
@@ -52,7 +52,7 @@ describe('calculateNumber', function() {
       expect(calculateNumber('SUBTRACT', 0, 0)).to.equal(0);
     });
   });
-  describe('#DIVIDE', function(){
+  describe('DIVIDE', function(){
     it('should round arguments and return the quotient', function () {
       expect(calculateNumber('DIVIDE', 24, 3)).to.equal(8);
     });
