@@ -1,7 +1,7 @@
 const chai = require('chai');
 const request = require('request');
 
-describe('Index page testing', function() {
+describe('Index page', function() {
   it('should return the correct status code for a succesful get', function(done) {
     request('http://localhost:7865', function(error, response, body) {
       chai.expect(response.statusCode).to.be.equal(200);
