@@ -1,5 +1,5 @@
 export default class AppController {
-  static getHomepage(Request, Response) {
-    Response.send('Hello Holberton School!');
+  static getHomepage(req, res) {
+    res.send('Hello Holberton School!');
   }
 }
